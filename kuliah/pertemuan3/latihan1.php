@@ -63,6 +63,6 @@ do {
 } while ( $i < 5 ); // <-- baru di lakukan pengulangan oleh syntax ini
  echo "<hr>";
 
-
+//cek cek 
 
 ?>

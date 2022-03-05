@@ -45,6 +45,12 @@ echo "<hr>";
         .warna_baris {
             background-color: palevioletred;
         }
+        .kotak {
+            width: 50px;
+            height: 50px;
+            background-color: yellowgreen;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -80,5 +86,17 @@ echo "<hr>";
 
 <!-- -- -->
 
+<?php 
+
+for ( $i = 1; $i <= 5; $i++ ){
+    echo "{$i} sapi <br>";
+}
+?>
+<!--  -->
+<?php for($i = 1; $i <= 3; $i++){ ?>
+    <?php for( $j = 1; $j <= 5; $i++ ){ ?>
+        <div class="kotak"><?= "$j"; ?></div>
+    <?php } ?>
+<?php } ?>    
 </body>
 </html>

@@ -29,7 +29,7 @@ $mahasiswa2 = [
             "jurusan"=>"AP"]// 3
             //"nilai_tugas"=>[100, 200, 300]
 ];
-
+//------------------------------------------------------------------\\
 // var_dump($mahasiswa2[3]["nilai_tugas"][0]);
 ?>
 <?php foreach($mahasiswa2 as $mhs) { ?>

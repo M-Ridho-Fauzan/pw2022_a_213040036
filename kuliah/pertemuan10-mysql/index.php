@@ -17,7 +17,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <title>Halaman admin</title>
 </head>
 <body>
-    <div class="container">
+<div class="container">
 <h1>Daftar Mahasiswa</h1>    
 
 <a href="tambah.php" target="_blank" class="btn badge bg-primary">Tambah data mahasiswa</a>

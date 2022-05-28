@@ -101,7 +101,7 @@
     $nama_depan = "Muhamad";
     $nama_tengah = "Ridho";
     $nama_belakang = "Fauzan";
-    echo $nama_depan . "" . $nama_tengah . "" . $nama_belakang ;
+    echo $nama_depan . " " . $nama_tengah . " " . $nama_belakang ;
     // "" di gunakan sebagai spasi
     //batas...............................................................................................
     echo "<br>";

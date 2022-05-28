@@ -64,9 +64,9 @@ $mahasiswa2 = [
         <a href="#" class="btn badge bg-danger">Delete</a>
       </td>
     </tr>
-<?php } ?>
+  <?php } ?>
   </tbody>
-</table>
+  </table>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
 

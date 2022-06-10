@@ -249,36 +249,39 @@ if( isset($_GET["cari"]) ){
             <!--------------- bates akhir card ------------------>
           </div>
         </div>
+        <hr>
         <!-- Navigasi -->
-        <?php if( !isset($_POST["cari"]) ): ?>
-        <?php if( $halamanAktif > 1 ) : ?>
-            <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success">&laquo;</a>
-        <?php else : ?>
-            <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success disabled">&laquo;</a>
-        <?php endif; ?>
+        <div class="container-fluid d-flex justify-content-center mb-5">
+          <?php if( !isset($_POST["cari"]) ): ?>
+          <?php if( $halamanAktif > 1 ) : ?>
+              <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success btn-sm">&laquo;</a>
+          <?php else : ?>
+              <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success disabled btn-sm">&laquo;</a>
+          <?php endif; ?>
 
-        <?php for( $i = 1; $i <= $jumlahHalaman; $i++ ) : ?>
-            <span class="m-1">
-                <?php if( $i == $halamanAktif ): ?>
-                    <a href="?halaman=<?= $i; ?>" class="btn btn-outline-success active"><?= $i; ?></a>
-                <?php else : ?>
-                    <a href="?halaman=<?= $i; ?>" class="btn btn-outline-success"><?= $i; ?></a>
-                <?php endif; ?>
-            </span>
-        <?php endfor; ?>
+          <?php for( $i = 1; $i <= $jumlahHalaman; $i++ ) : ?>
+              <span class="m-1">
+                  <?php if( $i == $halamanAktif ): ?>
+                      <a href="?halaman=<?= $i; ?>" class="btn btn-outline-success active btn-sm"><?= $i; ?></a>
+                  <?php else : ?>
+                      <a href="?halaman=<?= $i; ?>" class="btn btn-outline-success btn-sm"><?= $i; ?></a>
+                  <?php endif; ?>
+              </span>
+          <?php endfor; ?>
 
-        <?php if( $halamanAktif < $jumlahHalaman ) : ?>
-            <a href="?halaman=<?= $halamanAktif + 1; ?>" class="btn btn-outline-success">&raquo;</a>
-        <?php else : ?>
-            <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success disabled">&raquo;</a>
-        <?php endif; ?>
-        <?php else : ?>
-            <br><br>
-        <?php endif; ?>
+          <?php if( $halamanAktif < $jumlahHalaman ) : ?>
+              <a href="?halaman=<?= $halamanAktif + 1; ?>" class="btn btn-outline-success btn-sm">&raquo;</a>
+          <?php else : ?>
+              <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success disabled btn-sm">&raquo;</a>
+          <?php endif; ?>
+          <?php else : ?>
+              <br><br>
+          <?php endif; ?>
+          </div>
         </div>
         <!-- akhir navigasi -->
         <!-- rekomen & terbaru bar -->
-        <h2 class="ms-5"><span class="me-2 tr">#</span>Terbaru</h2>
+        <h2 class="ms-5 mt-5"><span class="me-2 tr">#</span>Terbaru</h2>
         <!-------------------- Rekomendasi Terbaru -------------->
         <!-- <div class="container"> -->
           <!-- <div class="position-relative"> -->

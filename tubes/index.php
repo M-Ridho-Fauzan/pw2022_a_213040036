@@ -72,6 +72,7 @@ if( isset($_GET["cari"]) ){
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="src/style/tampilan/style.css" />
     <link rel="shortcut icon" href="src/style/tampilan/img/icon.ico" type="image/x-icon" />
     <title>Bootstrap’s Tutorials</title>
@@ -126,7 +127,7 @@ if( isset($_GET["cari"]) ){
         ></button>
       </div>
     </nav>
-    <section class="dark">
+    <section class="dark pb-5 mb-5">
       <div class="container py-4">
         <div class="postcard dark blue d-flex flex-row">
           <div class="col-lg-9">
@@ -410,125 +411,13 @@ if( isset($_GET["cari"]) ){
         <?php endforeach; ?>
         <!-- </div> -->
         <!---------------------- footer ------------------->
-        <!-- -->
-        <div class="container-fluid h-50">
-          <div class="row">
-            <div class="col">
-              <footer class="bd-footer py-5 mt-5">
-                <div class="container py-5">
-                  <div class="row">
-                    <div class="col-lg-4 mb-3">
-                      <a
-                        class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"
-                        href="src/login.php"
-                        aria-label="Bootstrap"
-                      >
-                        <img
-                          src="src/img/IMEGI.png"
-                          class="border border-danger rounded-circle"
-                          width="50"
-                          alt="Ridho"
-                        />
-                        <span class="m-2 tr">Admin</span>
-                      </a>
-                      <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">
-                          Designed and built with all the love in the world by
-                          <a
-                            href="https://www.facebook.com/mridhofauzan.fauzan/"
-                            target="_blank"
-                            class="text-decoration-none"
-                            >M.Ridho Fauzan</a
-                          >
-                          with the help of
-                          <a
-                            href="https://getbootstrap.com/"
-                            class="text-decoration-none"
-                            >Bootstrap v5.1.3</a
-                          >.
-                        </li>
-                        <li class="mb-2">
-                          ©2022 created by
-                          <a
-                            href="https://www.facebook.com/mridhofauzan.fauzan/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-decoration-none tr"
-                            >ReadBook</a
-                          >
-                        </li>
-                      </ul>
-                      <hr class="tr" />
-                    </div>
-                    <div class="col-lg-3 offset-lg-1 mb-3 mt-3">
-                      <h5 class="tr">Links</h5>
-                      <ul class="list-unstyled">
-                        <li class="mb-2">
-                          <a
-                            href="https://www.youtube.com/watch?v=LkR-9Z1sle8&t=2848s"
-                            class="text-decoration-none"
-                            >Reverense</a
-                          >
-                        </li>
-                        <li class="mb-2">
-                          <a
-                            href="https://getbootstrap.com/"
-                            class="text-decoration-none"
-                            >Alat</a
-                          >
-                        </li>
-                        <li class="mb-2">
-                          <a
-                            href="https://www.pngwing.com/"
-                            class="text-decoration-none"
-                            >All Picture</a
-                          >
-                        </li>
-                      </ul>
-                      <hr class="tr" />
-                      <!-- <hr /> -->
-                    </div>
-                    <!-- <hr /> -->
-                    <div class="col-lg-3 offset-lg-1 mb-3 mt-3">
-                      <h5 class="tr">Akun</h5>
-                      <ul class="list-unstyled">
-                        <li class="mb-2">
-                          <a
-                            href="/docs/5.1/getting-started/"
-                            class="text-decoration-none"
-                            ><i class="m-2 bi bi-google"></i
-                            >ridhofauzan275@Gmail.com</a
-                          >
-                        </li>
-                        <li class="mb-2">
-                          <a
-                            href="/docs/5.1/examples/starter-template/"
-                            class="text-decoration-none"
-                            ><i class="m-2 bi bi-facebook"></i>ディック
-                            プッシー</a
-                          >
-                        </li>
-                        <li class="">
-                          <a
-                            href="https://m-ridho-fauzan.github.io/#"
-                            class="m-2 text-decoration-none"
-                            ><i class="me-2 bi bi-display"></i>My First Web</a
-                          >
-                        </li>
-                      </ul>
-                      <hr class="tr" />
-                      <!-- <hr /> -->
-                    </div>
-                    <!-- <hr /> -->
-                  </div>
-                </div>
-              </footer>
-              <!--  -->
-            </div>
-          </div>
-        </div>
       </div>
     </section>
+    <div class="container-fluid d-flex justify-content-center light">
+            <div class="p-1 text-dark">
+                <span>2022</span><i>&copy;</i><span>Designed and built with all the love in the world by</span><a href="src/login.php"><small class="p-1 tr fw-bold">ReadBook</small></a>
+            </div>
+        </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

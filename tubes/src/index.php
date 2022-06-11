@@ -210,11 +210,123 @@ if( isset($_GET["cari"]) ){
         <?php endif; ?>
         </div>
         <div class="p-5"></div>
-        <ul class="container-fluid d-flex justify-content-center light">
-            <small class="pe-2 ps-2">Flex item 1</small>
-            <small class="pe-2 ps-2">Flex item 2</small>
-            <small class="pe-2 ps-2">Flex item 3</small>
-        </ul>
+                   <!-- -->
+        <div class="container-fluid h-50">
+          <div class="row">
+            <div class="col">
+              <footer class="bd-footer py-5 mt-5">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-lg-4 mb-3">
+                      <a
+                        class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"
+                        href="src/login.php"
+                        aria-label="Bootstrap"
+                      >
+                        <img
+                          src="src/img/IMEGI.png"
+                          class="border border-danger rounded-circle"
+                          width="50"
+                          alt="Ridho"
+                        />
+                        <span class="m-2 tr">Admin</span>
+                      </a>
+                      <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                          Designed and built with all the love in the world by
+                          <a
+                            href="https://www.facebook.com/mridhofauzan.fauzan/"
+                            target="_blank"
+                            class="text-decoration-none"
+                            >M.Ridho Fauzan</a
+                          >
+                          with the help of
+                          <a
+                            href="https://getbootstrap.com/"
+                            class="text-decoration-none"
+                            >Bootstrap v5.1.3</a
+                          >.
+                        </li>
+                        <li class="mb-2">
+                          ©2022 created by
+                          <a
+                            href="https://www.facebook.com/mridhofauzan.fauzan/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-decoration-none tr"
+                            >ReadBook</a
+                          >
+                        </li>
+                      </ul>
+                      <hr class="tr" />
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 mb-3 mt-3">
+                      <h5 class="tr">Links</h5>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <a
+                            href="https://www.youtube.com/watch?v=LkR-9Z1sle8&t=2848s"
+                            class="text-decoration-none"
+                            >Reverense</a
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="https://getbootstrap.com/"
+                            class="text-decoration-none"
+                            >Alat</a
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="https://www.pngwing.com/"
+                            class="text-decoration-none"
+                            >All Picture</a
+                          >
+                        </li>
+                      </ul>
+                      <hr class="tr" />
+                      <!-- <hr /> -->
+                    </div>
+                    <!-- <hr /> -->
+                    <div class="col-lg-3 offset-lg-1 mb-3 mt-3">
+                      <h5 class="tr">Akun</h5>
+                      <ul class="list-unstyled">
+                        <li class="mb-2">
+                          <a
+                            href="/docs/5.1/getting-started/"
+                            class="text-decoration-none"
+                            ><i class="m-2 bi bi-google"></i
+                            >ridhofauzan275@Gmail.com</a
+                          >
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="/docs/5.1/examples/starter-template/"
+                            class="text-decoration-none"
+                            ><i class="m-2 bi bi-facebook"></i>ディック
+                            プッシー</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            href="https://m-ridho-fauzan.github.io/#"
+                            class="m-2 text-decoration-none"
+                            ><i class="me-2 bi bi-display"></i>My First Web</a
+                          >
+                        </li>
+                      </ul>
+                      <hr class="tr" />
+                      <!-- <hr /> -->
+                    </div>
+                    <!-- <hr /> -->
+                  </div>
+                </div>
+              </footer>
+              <!--  -->
+            </div>
+          </div>
+        </div>
     </div>
 </div>
 

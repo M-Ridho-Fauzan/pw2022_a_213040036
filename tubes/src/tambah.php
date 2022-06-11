@@ -41,74 +41,119 @@ if( tambah($_POST) > 0 ){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="style/tampilan/style.css" />
+    <link rel="shortcut icon" href="style/tampilan/img/icon.ico" type="image/x-icon" />
     <title>Tambah Data</title>
 </head>
 <body>
-<br>
-<h1>Tambah Data </h1>
-<br>
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand tr" href="#">
+      <h2>Tambah Data</h2>
+    </a>
+  </div>
+</nav>
 <div class="container-fluid">  
     <div class="row mt-3 justify-content-center">
         <div class="col-8"> 
-            <form action="" method="post" enctype="multipart/form-data" class="form-control" autocomplete="off" novalidate>
-                    <div class="mb-3">
-                        <label for="judul" class="form-label">judul : </label>
-                        <input type="text" class="form-control" placeholder="Tulis judul nya.." name="judul" id="judul" required autofocus pattern="">
+            <form action="" method="post" enctype="multipart/form-data" class="form-control dark text-white" style="text-align: center;" autocomplete="off" novalidate>
+            <!--  -->
+            <div class="row justify-content-center">
+                <!--  -->
+                <div class="col-md-9 m-5 p-5">
+              <div class="mb-5 border-bottom border-danger mblba input-group-sm">
+                <!-- gambar -->
+                <input type="file" class="form-control bg-dark text-danger border-0" placeholder="Tulis Nama File Foto Anda.." name="gambar" id="gambar" required>
+                <!-- akhir gambar -->
+                <!-- judul -->
+                <div class="card-body text-ceter  input-group-sm">
+                    <label for="judul" class="form-label">judul : </label>
+                    <input type="text" class="form-control bg-dark text-danger border-0" placeholder="Tulis judul nya.." name="judul" id="judul" required autofocus pattern="">
+                    <!-- akhir judul -->
+                    <!-- penjelasan -->
+                    <label for="judul" class="form-label">Keterangan : </label>
+                    <input type="text" class="form-control bg-dark text-danger border-0" placeholder="Keterangan boleh kosong.." name="keterangan" id="keterangan" required>
+                    <!-- akhir penjelasan -->
+                  <p class="card-text">
+                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+                  </p>
+                  <br />
+                  <!-- author -->
+                  <div class="row text-center">
+                    <div class="col">
+                      <ul class="list-unstyled">
+                        <h6 class="tr">Author</h6>
+                        <li>
+                          <p class="lead tc input-group-sm ">
+                          <input type="text" class="form-control bg-dark text-danger border-0" placeholder="Tulis author nya.." name="author" id="author" required>
+                          </p>
+                        </li>
+                      </ul>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="keterangan" class="form-label">Keterangan : </label>
-                        <input type="text" class="form-control" placeholder="Keterangan boleh kosong.." name="keterangan" id="keterangan" required>
+                    <!-- akhir author -->
+                    <!-- link -->
+                    <div class="col">
+                      <ul class="list-unstyled">
+                        <h6 class="tr">Link</h6>
+                        <li>
+                          <p class="lead input-group-sm ">
+                          <input type="text" class="form-control bg-dark text-danger border-0" placeholder="Tulis link nya.." name="link" id="link" required>
+                          </p>
+                        </li>
+                      </ul>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="author" class="form-label">author : </label>
-                        <input type="text" class="form-control" placeholder="Tulis author nya.." name="author" id="author" required>
+                    <!-- Akhir link -->
+                    <!-- terbuat -->
+                    <div class="col">
+                      <ul class="list-unstyled input-group-sm ">
+                        <h6 class="tr">Made With</h6>
+                        <li class=" input-group-sm ">
+                        <input type="text" class="form-control bg-dark text-danger border-0" placeholder="dibuat_dengan.." name="dibuat_dengan" id="dibuat_dengan" required>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
+                  <hr>
+                  <!-- akhir terbuat -->
+                  <small class="text-muted">tentang code</small>
+                  <!-- tentang kode -->
+                  <!-- <div class="d-flex flex-md-column bd-highlight mb-3"> -->
 
-                    <div class="mb-3">
-                        <label for="link" class="form-label">link : </label>
-                        <input type="text" class="form-control" placeholder="Tulis link nya.." name="link" id="link" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="dibuat_dengan" class="form-label">dibuat_dengan : </label>
-                        <input type="text" class="form-control" placeholder="dibuat_dengan.." name="dibuat_dengan" id="dibuat_dengan" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="browser_yang_kompatibel" class="form-label">browser yang kompatibel : </label>
-                        <input type="text" class="form-control" placeholder="browser yang kompatibel.." name="browser_yang_kompatibel" id="browser_yang_kompatibel" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="responsive" class="form-label">responsive : </label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="responsive" id="responsive" value="Ya" checked>
+                    <!--  -->
+                    <ul class="col input-group-sm ">
+                      <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0 input-group-sm">
+                        <span class="tr">kompitablelitas:</span><p>
+                        <input type="text" class="form-control-sm bg-dark text-danger" placeholder="browser yang kompatibel.." name="browser_yang_kompatibel" id="browser_yang_kompatibel" required>
+                        </p>
+                      </li>
+                      <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0 input-group-sm">
+                        <span class="tr">Responsive</span><p>
+                        <div class="">
+                            <input class="form-check-input-sm" type="radio" name="responsive" id="responsive" value="Ya" checked>
                             <label class="form-check-label" for="responsive">Yes</label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="responsive" id="responsive" value="Tidak">
+                        <div class="">
+                            <input class="form-check-input-sm" type="radio" name="responsive" id="responsive" value="Tidak">
                             <label class="form-check-label" for="responsive">Tidak</label>
                         </div>
-                        <!-- <input type="text" class="form-control" placeholder="responsive.." name="responsive" id="responsive" required> -->
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="ketergantungan" class="form-label">ketergantungan : </label>
-                        <input type="text" class="form-control" placeholder="ketergantungan.." name="ketergantungan" id="ketergantungan" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="bootstrap_versi" class="form-label">bootstrap_versi : </label>
-                        <input type="text" class="form-control" placeholder="bootstrap_versi.." name="bootstrap_versi" id="bootstrap_versi" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="gambar" class="form-label">Gambar : </label>
-                        <input type="file" class="form-control" placeholder="Tulis Nama File Foto Anda.." name="gambar" id="gambar" required>
-                    </div>
-
+                        </p>
+                      </li>
+                      <li class="row row-cols-1 row-cols-lg-2 g-3 g-lg-0 input-group-sm">
+                        <span class="tr">Dependencies</span><p>
+                        <input type="text" class="form-control-sm bg-dark text-danger" placeholder="ketergantungan.." name="ketergantungan" id="ketergantungan" required>
+                        </p>
+                      </li>
+                      <li class="row row-cols-1 row-cols-lg-2 g-3 g-lg-0 input-group-sm">
+                        <span class="tr">Bootstrap version</span><p>
+                        <input type="text" class="form-control-sm bg-dark text-danger" placeholder="bootstrap_versi.." name="bootstrap_versi" id="bootstrap_versi" required>
+                        </p>
+                      </li>
+                    </ul>
+                    <!--  -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
                     <br><br>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary" name="submit">Tambah data!</button>

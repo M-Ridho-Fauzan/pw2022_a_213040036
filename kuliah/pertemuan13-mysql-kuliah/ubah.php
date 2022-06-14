@@ -95,17 +95,5 @@ if( ubah($_POST) > 0 ){
         </div>  
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

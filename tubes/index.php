@@ -81,8 +81,6 @@ if( isset($_GET["cari"]) ){
   <body>
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="dark blue pt-2 d-flex justify-content-center">
-        <!-- <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span> -->
         <form class="input-group col-sm-5" action="" method="get">
           <button
             class="btn btn-outline-secondary border-0 text-white border-bottom bi bi-search"
@@ -100,6 +98,7 @@ if( isset($_GET["cari"]) ){
             aria-label="Example text with button addon"
             aria-describedby="button-addon1"
             autofocus
+            required
           />
         </form>
       </div>
@@ -151,7 +150,6 @@ if( isset($_GET["cari"]) ){
             </div>
           </div>
         </div>
-        <!-- <h1 class="h1 text-center" id="pageHeaderTitle">My Cards Dark</h1> -->
         <!--  -->
         <div class="container mt-5 pt-5">
           <div class="row justify-content-center">
@@ -178,9 +176,7 @@ if( isset($_GET["cari"]) ){
                   <?= $bootstraps["keterangan"]; ?>
                   </p>
                   <!-- akhir penjelasan -->
-                  <!-- <div class="postcard__bar"></div> -->
                   <p class="card-text">
-                    <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
                   </p>
                   <br />
                   <!-- author -->
@@ -191,7 +187,6 @@ if( isset($_GET["cari"]) ){
                         <li>
                           <p class="lead tc">
                           <?= $bootstraps["author"]; ?>
-                            <!-- <div><small class="text-muted">20 agustus 2019</small></div> -->
                           </p>
                         </li>
                       </ul>
@@ -223,8 +218,6 @@ if( isset($_GET["cari"]) ){
                   <!-- akhir terbuat -->
                   <small class="text-muted">tentang code</small>
                   <!-- tentang kode -->
-                  <!-- <div class="d-flex flex-md-column bd-highlight mb-3"> -->
-
                     <!--  -->
                     <ul class="col">
                       <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0">
@@ -276,7 +269,7 @@ if( isset($_GET["cari"]) ){
               <a href="?halaman=<?= $halamanAktif - 1; ?>" class="btn btn-outline-success disabled btn-sm">&raquo;</a>
           <?php endif; ?>
           <?php else : ?>
-              <br><br>
+              
           <?php endif; ?>
           </div>
         </div>
@@ -284,8 +277,6 @@ if( isset($_GET["cari"]) ){
         <!-- rekomen & terbaru bar -->
         <h2 class="ms-5 mt-5"><span class="me-2 tr">#</span>Terbaru</h2>
         <!-------------------- Rekomendasi Terbaru -------------->
-        <!-- <div class="container"> -->
-          <!-- <div class="position-relative"> -->
         <?php $i = 1; ?>
         <?php foreach( $tb as $tbs ) : ?>
         <article class="postcard dark blue me-5 ms-3">
@@ -300,6 +291,7 @@ if( isset($_GET["cari"]) ){
             <h1 class="postcard__title yellow">
               <h3 class="ms-3"><?= $tbs["judul"]; ?></h3>
             </h1>
+            <div><p><?= $tbs["keterangan"]; ?></p></div>
             <div class="postcard__bar"></div>
             <div class="postcard__subtitle small">
               <time>
@@ -311,7 +303,7 @@ if( isset($_GET["cari"]) ){
               <div class="row row-cols-1 row-cols-lg-2 g-0 g-lg-5">
                 <ul class="col">
                   <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0">
-                    <span class="text-muted">kompitablelitas:</span><p><?= $tbs["browser_yang_kompatibel"]; ?> Chrome, Edge, Firefox, Opera, Safari</p>
+                    <span class="text-muted">kompitablelitas:</span><p><?= $tbs["browser_yang_kompatibel"]; ?></p>
                   </li>
                   <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0">
                     <span class="text-muted">dibuat dengan:</span><p><?= $tbs["dibuat_dengan"]; ?></p>
@@ -364,6 +356,7 @@ if( isset($_GET["cari"]) ){
             <h1 class="postcard__title blue">
               <p><?= $tas["judul"]; ?></p>
             </h1>
+            <div><p><?= $tas["keterangan"]; ?></p></div>
             <div class="postcard__bar"></div>
             <div class="postcard__subtitle small">
               <time datetime="2020-05-25 12:00:00">
@@ -375,7 +368,7 @@ if( isset($_GET["cari"]) ){
             <div class="row row-cols-1 row-cols-lg-2 g-0 g-lg-5">
                 <ul class="col">
                   <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0">
-                    <span class="text-muted">kompitablelitas:</span><p><?= $tas["browser_yang_kompatibel"]; ?> Chrome, Edge, Firefox, Opera, Safari</p>
+                    <span class="text-muted">kompitablelitas:</span><p><?= $tas["browser_yang_kompatibel"]; ?></p>
                   </li>
                   <li class="row row-cols-1 row-cols-lg-2 g-0 g-lg-0">
                     <span class="text-muted">dibuat dengan:</span><p><?= $tas["dibuat_dengan"]; ?></p>

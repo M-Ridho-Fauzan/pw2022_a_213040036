@@ -124,9 +124,9 @@ $error = true;
                     <button type="submit" class="btn btn-primary" name="login">login!</button>
                 </div>
                 <p class="mt-3 text-muted text-center">OR</p>
-                <!-- <div class="d-grid gap-2">
+                <div class="d-grid gap-2">
                     <a href="registrasi.php" class="btn btn-outline-primary">Belum punya akun?</a>
-                </div> -->
+                </div>
                 <div class="mb-5 d-grid">
                     <a href="../index.php" class="btn btn-outline-primary">balik</a>
                 </div>

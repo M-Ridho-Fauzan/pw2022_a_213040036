@@ -48,7 +48,7 @@ if( isset($_GET["cari"]) ){
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="style/tampilan/img/icon.ico" type="image/x-icon" />
-    <title>Hello, world!</title>
+    <title>Adtmin - ReadBook</title>
   </head>
   <body>
 
@@ -77,6 +77,7 @@ if( isset($_GET["cari"]) ){
                         aria-label="Example text with button addon"
                         aria-describedby="button-addon1"
                         autofocus
+                        required
                     />
                     <button
                         class="border-0 text-white border-bottom bi bi-search bg-transparent"
@@ -95,10 +96,6 @@ if( isset($_GET["cari"]) ){
 <div class="dark">
     <div class="container-fluid">
         <br><br>
-        <!-- <form class="d-flex" style="max-width:300px" action="" method="get">
-            <input class="form-control me-2" type="search" name="keyword" placeholder="Search" aria-label="Search" autocomplete="off">
-            <button class="btn btn-outline-success bi bi-search-heart-fill" name="cari" type="submit"></button>
-        </form> -->
         <br>
 
 
@@ -121,6 +118,7 @@ if( isset($_GET["cari"]) ){
                     <h1 class="postcard__title yellow">
                     <h3 class="ms-3"><?= $bootstraps["judul"]; ?></h3>
                     </h1>
+                    <div><p><?= $bootstraps["keterangan"]; ?></p></div>
                     <div class="postcard__bar"></div>
                     <div class="postcard__subtitle small">
                     <time>
@@ -224,7 +222,7 @@ if( isset($_GET["cari"]) ){
                         aria-label="Bootstrap"
                       >
                         <img
-                          src="src/img/IMEGI.png"
+                          src="img/IMEGI.png"
                           class="border border-danger rounded-circle"
                           width="50"
                           alt="Ridho"

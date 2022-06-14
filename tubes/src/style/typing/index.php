@@ -24,7 +24,7 @@ if( !isset($_SESSION["login"]) ){
 <div class="wrapper">
       <div class="static-txt"></div>
       <ul class="dynamic-txts">
-        <li><span>Hello Atmin</span></li>
+        <li><span>Hello Admin</span></li>
         <li><span>Welcome to your page</span></li>
         <li><span>Enjoy :)</span></li>
         <li><span></span></li>
